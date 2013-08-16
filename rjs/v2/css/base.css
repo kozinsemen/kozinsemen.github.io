@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 11pt; }
+
+.msg, .log {
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 10px; }
+
+.msg {
+  background-color: #dfeede; }
+
+.log {
+  font-family: Consolas, "Courier New";
+  font-size: 10pt;
+  background-color: #eee; }

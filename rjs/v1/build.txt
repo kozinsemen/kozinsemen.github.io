@@ -1,0 +1,45 @@
+Building CS -> JS...
+
+Building SASS -> CSS...
+
+Pre-processing R.js config...
+
+module 'main', including files:
+  utils/log
+  utils/time-now
+
+module 'special/lib', including files:
+  special/print-ururu
+
+Optimizing project...
+
+js/libs/require.js
+----------------
+js/libs/require.js
+js/settings.js
+js/libs/text.js
+
+js/main.js
+----------------
+js/libs/jquery.js
+js/utils/time-now.js
+js/utils/log.js
+js/main.js
+js/libs/underscore.js
+js/libs/jquery-wrapper.js
+js/libs/backbone.js
+
+js/special/lib.js
+----------------
+js/special/lib.js
+js/special/print-ururu.js
+
+js/page.js
+----------------
+js/page.js
+
+js/page-heavy.js
+----------------
+js/page-heavy.js
+
+done!

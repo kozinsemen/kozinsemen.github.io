@@ -1,0 +1,1 @@
+require(["jquery","utils/log","settings"],function(e,t,n){return t("page.coffee executed"),e("body").append('<div class="msg">Dynamic text: '+n.message+"</div>")}),define("page",function(){});

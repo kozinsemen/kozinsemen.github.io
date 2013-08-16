@@ -1,0 +1,1 @@
+require(["special/lib"],function(){return require(["jquery","special/print-ururu","utils/log","settings"],function(e,t,n,r){return n("page-heavy.coffee executed"),e("body").append('<div class="msg">Dynamic text: '+r.message+"</div>"),t()})}),define("page-heavy",function(){});

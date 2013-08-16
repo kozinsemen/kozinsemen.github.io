@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Require.js test</title>
+
+	<script type="text/javascript">
+		var requirejs = {
+			baseUrl: 'js',
+			config: { 'settings': {
+				message: 'this is index.html.'
+			}},
+			callback: function () {
+				console.log(Math.round(performance.now()) + ': require.js loaded');
+				require([ 'main' ], function () {
+					console.log(Math.round(performance.now()) + ': main loaded');
+					require([ 'page' ]);
+				});
+			}
+		};
+	</script>
+	<script type="text/javascript">
+		(function() {
+			var rjs = document.createElement('script');
+			    rjs.type = 'text/javascript';
+			    rjs.async = true;
+			    rjs.src = 'js/libs/require.js';
+			    //rjs.src = 'http://kozinsemen.github.io/require.js';
+			var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(rjs, s);
+		})();
+	</script>
+
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="log">Log items:<br></div>
+	<script type="text/javascript">
+		console.log(Math.round(performance.now()) + ': page processed');
+	</script>
+</body>
+</html>

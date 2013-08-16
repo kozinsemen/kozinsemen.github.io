@@ -1,0 +1,1 @@
+define("special/lib",["utils/log"],function(e){return e("special/lib.coffee executed")}),define("special/print-ururu",["jquery","utils/log"],function(e,t){return t("special/ururu.coffee executed"),function(){return e("body").append('<div class="msg">Special: ururu!</div>')}});
